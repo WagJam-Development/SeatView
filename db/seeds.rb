@@ -37,6 +37,23 @@ venues = [
   }
 ]
 
+
+views = [
+  {
+    section: 110,
+    row: 15,
+    seat: 3,
+    view: 'https://aviewfrommyseat.com/wallpaper/anonymous-20190825204854.jpg'
+    venue_id: 1
+  }
+
+]
+
 venues.each do |venue|
   Venue.create(venue)
+  
+end
+
+views.each do |view|
+  View.create(view)
 end

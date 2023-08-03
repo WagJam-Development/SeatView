@@ -1,6 +1,12 @@
 <h1>Venues</h1>
 <ul>
   <% @venues.each do |venue| %>
-    <li><%= venue.name %>, <%= venue.location %></li>
+  <li><%= venue.name %>, <%= venue.location %></li>
   <% end %>
 </ul>
+
+<h2>Views</h2>
+
+<ul> 
+<% @views.each do |view| %> 
+<li>Section: <%= view.section %>, Row: <%= view.row %>, Seat: <%= view.seat %>, View: <%= view.view %> </li> <% end %> </ul>
