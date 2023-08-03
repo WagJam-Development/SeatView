@@ -1,8 +1,8 @@
-user1 = User.where(email: 'test1@example.com').first_or_create(password: 'password', password_confirmation: 'password')
+# user1 = User.where(email: 'test1@example.com').first_or_create(password: 'password', password_confirmation: 'password')
 
-user2 = User.where(email: 'test2@example.com').first_or_create(password: 'password', password_confirmation: 'password')
+# user2 = User.where(email: 'test2@example.com').first_or_create(password: 'password', password_confirmation: 'password')
 
-venueOne = [
+venues = [
   {
     name: 'SoFi Stadium',
     location: 'Inglewood, CA',
@@ -36,3 +36,7 @@ venueOne = [
     location: 'San Francisco, CA',
   }
 ]
+
+venues.each do |venue|
+  Venue.create(venue)
+end
