@@ -1,2 +1,4 @@
 class Venue < ApplicationRecord
-end
+    has_many :views, dependent: :destroy
+  end
+  

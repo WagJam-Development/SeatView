@@ -1,2 +1,4 @@
 class View < ApplicationRecord
-end
+    belongs_to :venue
+  end
+  
