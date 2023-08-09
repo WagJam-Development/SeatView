@@ -1,2 +1,15 @@
 <h3><%= @venue.name %></h3>
-<p><%= @venue.location%></p>
+<p><%= @venue.location %></p>
+
+<h4>Views:</h4>
+<ul>
+  <% @venue.views.each do |view| %>
+    <li>
+      Section: <%= view.section %>, Row: <%= view.row %>, Seat: <%= view.seat %>
+      <!-- You can also display the view image if available -->
+      <% if view.view.present? %>
+        <img src="<%= view.view %>" alt="View Image" width="100">
+      <% end %>
+    </li>
+  <% end %>
+</ul>
