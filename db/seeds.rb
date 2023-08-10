@@ -62,6 +62,9 @@ views = [
 
 ]
 
+#clear existing data
+
+
 venues.each do |venue|
   Venue.create(venue)
   
