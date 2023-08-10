@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :venues, only: [:index, :show, :new, :create]
+  resources :venues, only: [:index, :show, :new, :create, :destroy]
 
   root 'venues#index'
   get 'venues/:id' => 'venue#show'

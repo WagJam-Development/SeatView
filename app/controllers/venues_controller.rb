@@ -25,6 +25,15 @@ class VenuesController < ApplicationController
 
   end
 
+  def destroy 
+    @venue = Venue.find(params[:id])
+    if @venue.destroy
+      redirect_to @venue, notice: "Venue has been deleted"
+    else 
+      render :show
+    end
+  end 
+
   private
 
   def venue_params
