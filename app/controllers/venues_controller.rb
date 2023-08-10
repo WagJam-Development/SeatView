@@ -17,21 +17,19 @@ class VenuesController < ApplicationController
 
   def create
     @venue = Venue.new(venue_params)
+    
     if @venue.save
       redirect_to @venue, notice: "Venue has been created"
     else
       render :new 
     end
-
   end
+  
 
   def destroy 
     @venue = Venue.find(params[:id])
-    if @venue.destroy
-      redirect_to @venue, notice: "Venue has been deleted"
-    else 
-      render :show
-    end
+    @venue.destroy
+    redirect_to @venue, notice: "Venue has been deleted"
   end 
 
   private
