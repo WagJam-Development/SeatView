@@ -43,21 +43,21 @@ views = [
     row: 15,
     seat: 3,
     view: 'https://aviewfrommyseat.com/wallpaper/anonymous-20190825204854.jpg',
-    venue_id: 1  # SoFi Stadium
+    venue_id:1  # SoFi Stadium
   },
   {
     section: 200,
     row: 8,
     seat: 12,
     view: 'https://aviewfrommyseat.com/wallpaper/anonymous-20210411102114.jpg',
-    venue_id: 2  # Snapdragon Stadium
+    venue_id:2  # Snapdragon Stadium
   },
   {
     section: 45,
     row: 22,
     seat: 7,
     view: 'https://aviewfrommyseat.com/wallpaper/anonymous-20200712103521.jpg',
-    venue_id: 3  # Petco Park
+    venue_id:3  # Petco Park
   },
 
 ]
