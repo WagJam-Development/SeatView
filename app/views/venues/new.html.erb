@@ -1,7 +1,7 @@
 <h2>Create a New Venue</h2>
 
 <div id="new-venue">
-  <%= turbo_frame_tag 'new-venue' do %>
+  
     <%= form_with model: @venue, url: venues_path, local: true, method: :post do |form| %>
       <div class="field">
         <%= form.label :name %>
@@ -16,7 +16,7 @@
         <%= form.submit 'Create Venue' %>
       </div>
     <% end %>
-  <% end %>
+ 
 </div>
 
 
