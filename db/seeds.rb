@@ -4,60 +4,95 @@
 
 venues = [
   {
-    name: 'SoFi Stadium',
-    location: 'Inglewood, CA',
+    name: 'American Family Field',
+    location: 'Milwaukee, WI',
   },
   {
-    name: 'Snapdragon Stadium',
-    location: 'San Diego CA',
+    name: 'Angel Stadium',
+    location: 'Anaheim, CA',
   },
   {
-    name: 'Petco Park',
-    location: 'San Diego, CA',
+    name: 'Busch Stadium',
+    location: 'St. Louis, MO ',
   },
   {
-    name: 'Allegiant Stadium',
-    location: 'Las Vegas, NV',
+    name: 'Chase Field',
+    location: 'Phoenix, AZ',
   },
   {
-    name: 'T-Mobile Arena',
-    location: 'Las Vegas, NV',
+    name: 'Citi Field',
+    location: 'Queens, NY',
   },
   {
-    name: 'Levi Stadium',
-    location: 'Santa Clara, CA',
+    name: 'Citizens Bank Park',
+    location: 'Philadelphia, PA',
   },
   {
-    name: 'Chase Center',
-    location: 'San Francisco, CA',
+    name: 'Comerica Park',
+    location: 'Detriot, MI',
   },
   {
-    name: 'Oracle Park',
-    location: 'San Francisco, CA',
+    name: 'Coors Field',
+    location: 'Denver, CO',
   }
 ]
 
 views = [
   {
-    section: 110,
-    row: 15,
-    seat: 3,
-    view: 'https://aviewfrommyseat.com/wallpaper/anonymous-20190825204854.jpg',
-    venue_id:1  # SoFi Stadium
+    section: 101,
+    row: 1,
+    seat: 13,
+    view: 'https://aviewfrommyseat.com/wallpaper/anonymous-20220921152358.jpg',
+    venue_id:1  # American Family Field
   },
   {
-    section: 200,
-    row: 8,
-    seat: 12,
-    view: 'https://aviewfrommyseat.com/wallpaper/anonymous-20190825204854.jpg',
-    venue_id:2  # Snapdragon Stadium
+    section: 202,
+    row: 2,
+    seat: 17,
+    view: 'https://aviewfrommyseat.com/photos/anonymous-20220919162357.jpg',
+    venue_id:2  # Angel Stadium
+  },
+  {
+    section: 240,
+    row: 4,
+    seat: 14,
+    view: 'https://aviewfrommyseat.com/photos/Radar2141-20180409224514.jpg',
+    venue_id:3  # Busch Stadium
+  },
+  {
+    section: 30,
+    row: 4,
+    seat: 38,
+    view: '',
+    venue_id:4  # Chase Field
+  },
+  {
+    section: 44,
+    row: 5,
+    seat: 49,
+    view: '',
+    venue_id:5  # Citi Field
+  },
+  {
+    section: 51,
+    row: 6,
+    seat: 52,
+    view: '',
+    venue_id:6  # Citizens Bank Park
   },
   {
     section: 45,
     row: 22,
     seat: 7,
-    view: 'https://aviewfrommyseat.com/wallpaper/anonymous-20190825204854.jpg',
-    venue_id:3  # Petco Park
+    view: '',
+    venue_id:7  # Comerica Park
+  },
+  {
+    section: 45,
+    row: 22,
+    seat: 7,
+    view: '',
+    venue_id:8  # Coors Field
   },
 
 ]
