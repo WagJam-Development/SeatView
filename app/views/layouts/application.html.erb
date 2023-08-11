@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>SeatView</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>SeatView</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
 
-  <body>
-    <nav>
-    <%= link_to 'Home', root_path %>
-    </nav>
-    <%= yield %>
-  </body>
+<body>
+  <nav>
+    <%= link_to 'SeatView', root_path %>
+    <%= link_to 'Login'  %>
+    <%= link_to 'Upload Photos'  %>
+  </nav>
+  
+  <%= yield %>
+</body>
+
 </html>
+
