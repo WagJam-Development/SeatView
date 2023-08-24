@@ -29,7 +29,7 @@ class VenuesController < ApplicationController
   def destroy 
     @venue = Venue.find(params[:id])
     @venue.destroy
-    redirect_to @venue, notice: "Venue has been deleted"
+    redirect_to root_path, notice: "Venue has been deleted"
   end 
 
   private

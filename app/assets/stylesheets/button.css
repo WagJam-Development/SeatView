@@ -1,0 +1,9 @@
+/* app/assets/stylesheets/application.css */
+.delete-button {
+    background-color: red;
+    color: white;
+    border: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  
