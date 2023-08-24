@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 
+
+  <nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">SeatView</a>
+    <ul class="navbar-nav"> 
+      <li><%= link_to 'Login', new_user_session_path %></li>
+    </ul>
+  </div>
+</nav>
+
+  
+  <%= yield %>
+  
 <head>
   <title>SeatView</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,18 +21,19 @@
   <%= csp_meta_tag %>
 
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+<%= stylesheet_link_tag "navbar", media: 'all', 'data-turbolinks-track' => true %>
+
+
   <%= javascript_importmap_tags %>
 </head>
 
+
+
 <body>
-  <nav>
-    <%= link_to 'SeatView', root_path %>
-    <%= link_to 'Login', new_user_session_path %>
-    <%= link_to 'Upload Photos'  %>
-  </nav>
   
-  <%= yield %>
 </body>
 
 </html>
+
+
 
